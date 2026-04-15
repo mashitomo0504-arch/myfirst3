@@ -1,7 +1,8 @@
 "use client";
+
 import { useState } from "react";
 
-export default function App() {
+export default function Page() {
   const [stress, setStress] = useState(3);
   const [response, setResponse] = useState("");
 
@@ -33,11 +34,10 @@ export default function App() {
         onChange={(e) => setStress(Number(e.target.value))}
       />
 
-      <br /><br />
+      <br />
+      <br />
 
-      <button onClick={handleClick}>
-        AIに相談する
-      </button>
+      <button onClick={handleClick}>AIに相談する</button>
 
       <p>{response}</p>
     </div>
